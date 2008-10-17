@@ -18,13 +18,7 @@ class imagemagick {
 }
 
 class imagemagick::base {
-    package{'imagemagick':
+    package{'ImageMagick':
         ensure => present,
-    }
-    service{imagemagick:
-        ensure => running,
-        enable => true,
-        hasstatus => true,
-        require => Package[imagemagick],
     }
 }
