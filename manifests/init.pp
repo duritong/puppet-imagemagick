@@ -4,6 +4,7 @@
 # Copyright 2008, Puzzle ITC
 # Marcel Härry haerry+puppet(at)puzzle.ch
 # Simon Josi josi+puppet(at)puzzle.ch
+# Immerda Admin Team admin+puppet(at)immerda.ch
 #
 # This program is free software; you can redistribute 
 # it and/or modify it under the terms of the GNU 
@@ -11,15 +12,6 @@
 # the Free Software Foundation.
 #
 
-# modules_dir { \"imagemagick\": }
-
 class imagemagick {
     include imagemagick::base
-}
-
-class imagemagick::base {
-    include avahi
-    package{'ImageMagick':
-        ensure => present,
-    }
 }
