@@ -5,6 +5,6 @@ class imagemagick::config {
                  'puppet:///modules/imagemagick/policy.xml'],
       owner  => 'root',
       group  => 'root',
-      mode   => '0440';
+      mode   => '0444';
   }
 }
