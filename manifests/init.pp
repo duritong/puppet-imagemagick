@@ -1,7 +1,6 @@
 # manage all imagemagick stuff
 class imagemagick {
   include avahi
-  include imagemagick::config
   package{'ImageMagick':
       ensure => present,
   } -> file{
